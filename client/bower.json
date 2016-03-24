@@ -1,0 +1,22 @@
+{
+  "name": "Amagumolab Basic",
+  "version": "1.0.0",
+  "authors": [
+    "lap.le <levanlap1210@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.3",
+    "angular-translate": "~2.7.2",
+    "angular": "~1.4.3",
+    "Bootflat": "~2.0.4",
+    "angular-translate-loader-static-files": "2.7.2"
+  }
+}

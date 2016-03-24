@@ -1,0 +1,35 @@
+﻿
+<h2 class="example-title">{{'load.properties.TITLE' | translate}}</h2>
+
+<h2 class="example-title">{{'load.properties.HEADER' | translate}}</h2>
+  <button class="btn" ng-click="bookCtr.changeLanguage('en')" translate="BUTTON_LANG_EN" class="ng-scope">english</button>
+                <button class="btn" ng-click="bookCtr.changeLanguage('de')" translate="BUTTON_LANG_DE" class="ng-scope">german</button>
+<div class="col-md-12" >
+  <div class="panel panel-primary">
+    <div class="panel-heading">Books List Review Code TypeScript and AngularJS</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="book in bookCtr.books track by $index">
+          <td>{{book.id}}</td>
+          <td>{{book.bookName}}</td>
+          <td>{{book.authorName}}</td>
+          <td>{{book.price}}</td>
+          <td>
+            <a href="#/editBook/{{$index}}"><span class="label label-primary" >Edit</span></a>
+            <div class="blank"></div>&nbsp;
+            <span class="label label-danger">Delete</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
